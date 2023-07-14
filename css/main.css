@@ -366,7 +366,8 @@ h2 {
 }
 
 #profile-image {
-  width: 90%;
+  width: 100%;
+  margin-top: 1rem;
 }
 
 #about h3,
@@ -809,6 +810,7 @@ h3 {
 
   #profile-image {
     width: 100%;
+    margin-top: 2rem;
   }
 
   #about h3,
@@ -1167,6 +1169,7 @@ h3 {
 
   #profile-image {
     width: 100%;
+    margin-top: 2rem;
   }
 
   #about h3,
@@ -1526,6 +1529,7 @@ h3 {
 
   #profile-image {
     width: 100%;
+    margin-top: 2rem;
   }
 
   #about h3,
@@ -1882,6 +1886,7 @@ h3 {
 
   #profile-image {
     width: 100%;
+    margin-top: 2rem;
   }
 
   #about h3,
