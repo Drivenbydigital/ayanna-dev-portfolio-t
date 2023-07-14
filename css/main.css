@@ -101,7 +101,9 @@ textarea {
 /* ==========================================================================
    Mobile First styles
    ========================================================================== */
-
+/* ==========================================================================
+   -NAVBAR-
+   ========================================================================== */
 .navbar {
   background-color: rgba(37, 0, 44, 0.69);
   font-family: 'Varela Round', sans-serif;
@@ -175,7 +177,7 @@ img {
   max-height: 3em;
 }
 
-.spacer>img {
+.spacer img {
   max-width: 18rem;
   padding-right: 2rem;
   margin-top: 1rem;
@@ -215,6 +217,222 @@ img {
   width: 100%;
   background-color: rgba(37, 0, 44, 0.69);
   border-radius: 0.625rem;
+}
+
+/* ==========================================================================
+  HERO SECTION
+   ========================================================================== */
+
+/* Hero Section Styling */
+
+.home-title {
+  background-image: url('/img/comp-landscape.png');
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+
+}
+
+.home-title h1,
+h2 {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+}
+
+.home-title h1 {
+  font-size: 3em;
+}
+
+.home-title h2 {
+  font-size: 2em;
+}
+
+
+/* ==========================================================================
+  PORTFOLIO SECTION
+   ========================================================================== */
+#work,
+#skills {
+  width: 100%;
+}
+
+#work h3 {
+  width: 100%;
+  color: #b39d22;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+
+.portfolio-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+.home-portfolio-piece {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-portfolio-piece h4 {
+  font-weight: bold;
+  color: #b39d22;
+  font-size: 1.5rem;
+}
+
+.home-portfolio-piece figure {
+  width: 100%;
+  filter: drop-shadow(1px 2px 6px lightgrey);
+}
+
+.project-link {
+  background-color: #6b1444;
+  padding: .75rem 3.75rem;
+  border-radius: 30px;
+  color: #FFFFFF;
+  transition: color 0.3s ease;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+.project-link:hover {
+  color: #b39d22;
+}
+
+.home-portfolio-piece p {
+  text-align: left;
+  width: 100%;
+  line-height: 1.8;
+  padding-left: 2rem;
+}
+
+/* ==========================================================================
+  SKILLS SECTION
+   ========================================================================== */
+
+.skills {
+  background: rgba(37, 0, 44, 0.69);
+  padding: 20px;
+
+}
+
+.skills h2 {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  ;
+}
+
+.skills .skill-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(350px, 1fr)); /* Adjust the minimum and maximum width as needed */
+  gap: 10px;
+  text-transform: uppercase;
+  max-width: 900px;
+  margin-right: 2.5rem
+}
+
+
+
+
+.skills .column {
+  background-color: #b39d22;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* ==========================================================================
+  ABOUT SECTION
+   ========================================================================== */
+#about {
+  width: 100%;
+}
+
+#profile-image {
+  width: 90%;
+}
+
+#about h3,
+#about h4,
+#about p {
+  color: #4a4f3e;
+}
+
+#about h3 {
+  color: #b39d22;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 1.75rem;
+}
+
+#about p {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+/* ==========================================================================
+  FOOTER SECTION
+   ========================================================================== */
+footer {
+  background-color: rgba(37, 0, 44, 0.69);
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.contact-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #b39d22;
+  font-family: 'Oswald', sans-serif;
+  flex: 1;
+  text-align: center;
+  margin-bottom: 10px;
+  align-items: center;
+
+
+}
+
+
+#bottom {
+  background-color: #400E32;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 /* ==========================================================================
@@ -299,6 +517,8 @@ img {
   clear: both;
 }
 
+
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -345,6 +565,7 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    
 
   }
 
@@ -384,7 +605,7 @@ img {
     max-height: 3em;
   }
 
-  .spacer>img {
+  .spacer img {
     max-width: 22rem;
     padding-right: 1rem;
   }
@@ -429,6 +650,223 @@ img {
     border-radius: 0.625rem;
     display: none;
   }
+
+
+/*==========================================================================
+  HERO SECTION
+   ========================================================================== */
+
+/* Hero Section Styling */
+
+.home-title {
+  background-image: url('/img/comp-landscape.png');
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+
+}
+
+.home-title h1,
+h2 {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+}
+
+.home-title h1 {
+  font-size: 3em;
+}
+
+.home-title h2 {
+  font-size: 2em;
+}
+
+/* ==========================================================================
+  PORTFOLIO SECTION
+   ========================================================================== */
+#work,
+#skills {
+  width: 100%;
+}
+
+#work h3 {
+  width: 100%;
+  color: #b39d22;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+
+.portfolio-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+.home-portfolio-piece {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-portfolio-piece h4 {
+  font-weight: bold;
+  color: #b39d22;
+  font-size: 1.5rem;
+}
+
+.home-portfolio-piece figure {
+  width: 100%;
+  filter: drop-shadow(1px 2px 6px lightgrey);
+}
+
+.project-link {
+  background-color: #6b1444;
+  padding: .75rem 3.75rem;
+  border-radius: 30px;
+  color: #FFFFFF;
+  transition: color 0.3s ease;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+.project-link:hover {
+  color: #b39d22;
+}
+
+.home-portfolio-piece p {
+  text-align: left;
+  width: 100%;
+  line-height: 1.8;
+  padding-left: 2rem;
+}
+
+/* ==========================================================================
+     SKILLS SECTION
+      ========================================================================== */
+
+.skills {
+  background: rgba(37, 0, 44, 0.69);
+  padding: 20px;
+
+}
+
+.skills h2 {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  ;
+}
+
+.skills .skill-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr)); /* Adjust the minimum and maximum width as needed */
+  gap: 10px;
+  text-transform: uppercase;
+  max-width: 900px;
+  margin-right: 2.5rem
+}
+
+
+
+
+.skills .column {
+  background-color: #b39d22;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* ==========================================================================
+     ABOUT SECTION
+      ========================================================================== */
+#about {
+  width: 100%;
+}
+
+#profile-image {
+  width: 90%;
+}
+
+#about h3,
+#about h4,
+#about p {
+  color: #4a4f3e;
+}
+
+#about h3 {
+  color: #b39d22;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 1.75rem;
+}
+
+#about p {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+/* ==========================================================================
+     FOOTER SECTION
+      ========================================================================== */
+footer {
+  background-color: rgba(37, 0, 44, 0.69);
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.contact-wrapper {
+  flex-direction: row; /* Arrange items side by side */
+    justify-content: center; /* Center items horizontally */
+  }
+
+
+
+footer #contact a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#contact h3 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #b39d22;
+  font-family: 'Oswald', sans-serif;
+  flex: 1;
+  text-align: center;
+  margin-bottom: 10px;
+  align-items: center;
+
+
+}
+
+#contact h2 {
+  font-size: 40px;
+}
+
+
+#bottom {
+  background-color: #400E32;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
 }
 
 /* ==========================================================================
@@ -471,6 +909,7 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    
 
   }
 
@@ -501,6 +940,7 @@ img {
     font-size: 1.6rem;
 
   }
+ 
 
   .spacer {
 
@@ -511,7 +951,7 @@ img {
     max-height: 3em;
   }
 
-  .spacer>img {
+  .spacer img {
     max-width: 26rem;
     padding-right: 6rem;
   }
@@ -558,12 +998,225 @@ img {
   }
 
 
+/*==========================================================================
+  HERO SECTION
+   ========================================================================== */
+
+/* Hero Section Styling */
+
+.home-title {
+  background-image: url('/img/comp-landscape.png');
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+
 }
 
+.home-title h1,
+h2 {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+}
+
+.home-title h1 {
+  font-size: 3em;
+}
+
+.home-title h2 {
+  font-size: 2em;
+}
+
+
+/* ==========================================================================
+  PORTFOLIO SECTION
+   ========================================================================== */
+#work,
+#skills {
+  width: 100%;
+}
+
+#work h3 {
+  width: 100%;
+  color: #b39d22;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+
+.portfolio-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+.home-portfolio-piece {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-portfolio-piece h4 {
+  font-weight: bold;
+  color: #b39d22;
+  font-size: 1.5rem;
+}
+
+.home-portfolio-piece figure {
+  width: 100%;
+  filter: drop-shadow(1px 2px 6px lightgrey);
+}
+
+.project-link {
+  background-color: #6b1444;
+  padding: .75rem 3.75rem;
+  border-radius: 30px;
+  color: #FFFFFF;
+  transition: color 0.3s ease;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+.project-link:hover {
+  color: #b39d22;
+}
+
+.home-portfolio-piece p {
+  text-align: left;
+  width: 100%;
+  line-height: 1.8;
+  padding-left: 2rem;
+}
+
+/* ==========================================================================
+     SKILLS SECTION
+      ========================================================================== */
+
+.skills {
+  background: rgba(37, 0, 44, 0.69);
+  padding: 20px;
+
+}
+
+.skills h2 {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  ;
+}
+
+.skills .skill-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(350px, 1fr)); /* Adjust the minimum and maximum width as needed */
+  gap: 10px;
+  text-transform: uppercase;
+  max-width: 900px;
+  margin-left:3rem;
+}
+
+
+
+
+.skills .column {
+  background-color: #b39d22;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* ==========================================================================
+     ABOUT SECTION
+      ========================================================================== */
+#about {
+  width: 100%;
+}
+
+#profile-image {
+  width: 90%;
+}
+
+#about h3,
+#about h4,
+#about p {
+  color: #4a4f3e;
+}
+
+#about h3 {
+  color: #b39d22;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 1.75rem;
+}
+
+#about p {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+/* ==========================================================================
+     FOOTER SECTION
+      ========================================================================== */
+footer {
+  background-color: rgba(37, 0, 44, 0.69);
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.contact-wrapper {
+  display: flex;
+   flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+footer#contact a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #b39d22;
+  font-family: 'Oswald', sans-serif;
+  flex: 1;
+  text-align: center;
+  margin-bottom: 10px;
+  align-items: center;
+
+
+}
+
+
+#bottom {
+  background-color: #400E32;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+}
 /*==========================================================================
    Desktop Styles HD 1280px
    ========================================================================== */
-@media (min-width: 1280px) and (max-width: 1680px) {
+@media (min-width: 1280px) {
   .navbar {
     background-color: rgba(37, 0, 44, 0.69);
     font-family: 'Varela Round', sans-serif;
@@ -640,9 +1293,9 @@ img {
     max-height: 3em;
   }
 
-  .spacer>img {
+  .spacer img {
     max-width: 35rem;
-    padding-right: 13rem;
+    margin-right: 9rem;
     margin-top: 2rem;
   }
 
@@ -686,10 +1339,567 @@ img {
     border-radius: 0.625rem;
     display: none;
   }
+
+
+/*==========================================================================
+  HERO SECTION
+   ========================================================================== */
+
+/* Hero Section Styling */
+
+.home-title {
+  background-image: url('/img/comp-landscape.png');
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+
+}
+
+.home-title h1,
+h2 {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+}
+
+.home-title h1 {
+  font-size: 3em;
+}
+
+.home-title h2 {
+  font-size: 2em;
+}
+
+
+/* ==========================================================================
+  PORTFOLIO SECTION
+   ========================================================================== */
+#work,
+#skills {
+  width: 100%;
+}
+
+#work h3 {
+  width: 100%;
+  color: #b39d22;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+
+.portfolio-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+.home-portfolio-piece {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-portfolio-piece h4 {
+  font-weight: bold;
+  color: #b39d22;
+  font-size: 1.5rem;
+}
+
+.home-portfolio-piece figure {
+  width: 100%;
+  filter: drop-shadow(1px 2px 6px lightgrey);
+}
+
+.project-link {
+  background-color: #6b1444;
+  padding: .75rem 3.75rem;
+  border-radius: 30px;
+  color: #FFFFFF;
+  transition: color 0.3s ease;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+.project-link:hover {
+  color: #b39d22;
+}
+
+.home-portfolio-piece p {
+  text-align: left;
+  width: 100%;
+  line-height: 1.8;
+  padding-left: 2rem;
+}
+
+/* ==========================================================================
+  SKILLS SECTION
+   ========================================================================== */
+
+.skills {
+  background: rgba(37, 0, 44, 0.69);
+  padding: 20px;
+
+}
+
+.skills h2 {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  ;
+}
+
+.skills .skill-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(350px, 1fr)); /* Adjust the minimum and maximum width as needed */
+  gap: 10px;
+  text-transform: uppercase;
+  max-width: 900px;
+  margin-left:5rem;
 }
 
 
 
+
+.skills .column {
+  background-color: #b39d22;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* ==========================================================================
+  ABOUT SECTION
+   ========================================================================== */
+#about {
+  width: 100%;
+}
+
+#profile-image {
+  width: 90%;
+}
+
+#about h3,
+#about h4,
+#about p {
+  color: #4a4f3e;
+}
+
+#about h3 {
+  color: #b39d22;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 1.75rem;
+}
+
+#about p {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+/* ==========================================================================
+  FOOTER SECTION
+   ========================================================================== */
+footer {
+  background-color: rgba(37, 0, 44, 0.69);
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.contact-wrapper {
+  display: flex;
+   flex-direction: row;
+   justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+footer #contact a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #b39d22;
+  font-family: 'Oswald', sans-serif;
+  flex: 1;
+  text-align: center;
+  margin-bottom: 10px;
+  align-items: center;
+
+
+}
+
+
+#bottom {
+  background-color: #400E32;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+}
+/*==========================================================================
+   Desktop Styles HD 1280px
+   ========================================================================== */
+@media (min-width: 1440px) {
+  .navbar {
+    background-color: rgba(37, 0, 44, 0.69);
+    font-family: 'Varela Round', sans-serif;
+    margin-top: 0rem;
+    padding: 1rem;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .logo>img {
+    max-width: 100%;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .navigation a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+  }
+
+  .navigation a:hover {
+    background-color: rgba(37, 0, 44, 0.69);
+    color: white;
+    border-radius: 3.125rem;
+  }
+
+  .navbar-links.active {
+
+    top: 5rem;
+    display: flex;
+    background-color: #6b1444;
+    color: white;
+    width: 100%;
+    z-index: 1000;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+
+  .navbar-links {
+    display: flex;
+    width: 100%;
+    color: white;
+    font-size: 1.9rem;
+
+  }
+
+  .spacer {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-height: 3em;
+  }
+
+  .spacer img {
+    max-width: 35rem;
+    padding-right: 10rem;
+    margin-top: 2rem;
+  }
+
+  .navigation .contact-button:hover {
+    color: #b39d22;
+    border-radius: 1.25rem;
+
+  }
+
+  .contact-button {
+    background-color: #6b1444;
+    color: white;
+    padding: 0.75rem 1.5625rem;
+    border-radius: 1.25rem;
+    transition: color 0.3s ease;
+    font-family: 'Oswald', sans-serif;
+    margin-right: 1rem;
+    text-decoration: none;
+    display: flex;
+    font-size: 1.8rem;
+  }
+
+  /* DROPDOWN Menu */
+  .toggle-button {
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.875rem;
+    height: 1.4375rem;
+    color: white;
+    display: none;
+  }
+
+  .toggle-button .bar {
+    height: 0.1875rem;
+    width: 100%;
+    background-color: rgba(37, 0, 44, 0.69);
+    border-radius: 0.625rem;
+    display: none;
+  }
+
+
+/*==========================================================================
+  HERO SECTION
+   ========================================================================== */
+
+/* Hero Section Styling */
+
+.home-title {
+  background-image: url('/img/comp-landscape.png');
+  background-size: cover;
+  background-position: center;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+
+}
+
+.home-title h1,
+h2 {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+}
+
+.home-title h1 {
+  font-size: 3em;
+}
+
+.home-title h2 {
+  font-size: 2em;
+}
+
+/* ==========================================================================
+  PORTFOLIO SECTION
+   ========================================================================== */
+#work,
+#skills {
+  width: 100%;
+}
+
+#work h3 {
+  width: 100%;
+  color: #b39d22;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+
+.portfolio-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+.home-portfolio-piece {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-portfolio-piece h4 {
+  font-weight: bold;
+  color: #b39d22;
+  font-size: 1.5rem;
+}
+
+.home-portfolio-piece figure {
+  width: 100%;
+  filter: drop-shadow(1px 2px 6px lightgrey);
+}
+
+.project-link {
+  background-color: #6b1444;
+  padding: .75rem 3.75rem;
+  border-radius: 30px;
+  color: #FFFFFF;
+  transition: color 0.3s ease;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+.project-link:hover {
+  color: #b39d22;
+}
+
+.home-portfolio-piece p {
+  text-align: left;
+  width: 100%;
+  line-height: 1.8;
+  padding-left: 2rem;
+}
+
+/* ==========================================================================
+  SKILLS SECTION
+   ========================================================================== */
+
+.skills {
+  background: rgba(37, 0, 44, 0.69);
+  padding: 20px;
+
+}
+
+.skills h2 {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  ;
+}
+
+.skills .skill-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(350px, 1fr)); /* Adjust the minimum and maximum width as needed */
+  gap: 10px;
+  text-transform: uppercase;
+  max-width: 900px;
+  margin-left:9rem;
+}
+
+
+
+
+.skills .column {
+  background-color: #b39d22;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* ==========================================================================
+  ABOUT SECTION
+   ========================================================================== */
+#about {
+  width: 100%;
+}
+
+#profile-image {
+  width: 90%;
+}
+
+#about h3,
+#about h4,
+#about p {
+  color: #4a4f3e;
+}
+
+#about h3 {
+  color: #b39d22;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 1.75rem;
+}
+
+#about p {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+/* ==========================================================================
+  FOOTER SECTION
+   ========================================================================== */
+footer {
+  background-color: rgba(37, 0, 44, 0.69);
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.contact-wrapper {
+  display: flex;
+   flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+footer#contact a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #b39d22;
+  font-family: 'Oswald', sans-serif;
+  flex: 1;
+  text-align: center;
+  margin-bottom: 10px;
+  align-items: center;
+
+
+}
+
+
+#bottom {
+  background-color: #400E32;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+}
 @media print,
 (-webkit-min-device-pixel-ratio: 1.25),
 (min-resolution: 1.25dppx),
