@@ -257,12 +257,12 @@ h2 {
 /* ==========================================================================
   PORTFOLIO SECTION
    ========================================================================== */
-#work,
+.work,
 #skills {
   width: 100%;
 }
 
-#work h3 {
+.work h3 {
   width: 100%;
   color: #b39d22;
   font-size: 2.5rem;
@@ -356,6 +356,7 @@ h2 {
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-size: 1rem;
 }
 
 /* ==========================================================================
@@ -430,6 +431,10 @@ h3 {
 
 }
 
+#contact .social-container a {
+  font-size: 1.9rem;
+  color: #400E32;
+}
 
 #bottom {
   background-color: #400E32;
@@ -691,12 +696,12 @@ h3 {
   /* ==========================================================================
   PORTFOLIO SECTION
    ========================================================================== */
-  #work,
+  .work,
   #skills {
     width: 100%;
   }
 
-  #work h3 {
+  .work h3 {
     width: 100%;
     color: #b39d22;
     font-size: 2.5rem;
@@ -799,6 +804,7 @@ h3 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-size: 1.5rem;
   }
 
   /* ==========================================================================
@@ -848,6 +854,7 @@ h3 {
   .contact-wrapper {
     flex-direction: row;
     justify-content: center;
+    margin-right: 5rem;
   }
 
 
@@ -883,7 +890,8 @@ h3 {
     font-size: 1.5rem;
   }
   #contact .social-container a {
-    font-size: 1.2rem;
+    font-size: 3rem;
+    color: #400E32;
   }
 }
 
@@ -1052,12 +1060,12 @@ h3 {
   /* ==========================================================================
   PORTFOLIO SECTION
    ========================================================================== */
-  #work,
+  .work,
   #skills {
     width: 100%;
   }
 
-  #work h3 {
+  .work h3 {
     width: 100%;
     color: #b39d22;
     font-size: 3rem;
@@ -1207,6 +1215,7 @@ h3 {
   .contact-wrapper {
     flex-direction: row;
     justify-content: center;
+    margin-right: 7rem;
   }
 
 
@@ -1232,9 +1241,6 @@ h3 {
     font-size: 2.8rem;
   }
 
-
-
-
   #bottom {
     background-color: #400E32;
     padding-top: 2px;
@@ -1243,7 +1249,8 @@ h3 {
   }
 
   #contact .social-container a {
-    font-size: 1.2rem;
+    font-size: 3.3rem;
+    color: #400E32;
   }
 }
 
@@ -1412,12 +1419,12 @@ h3 {
   /* ==========================================================================
   PORTFOLIO SECTION
    ========================================================================== */
-  #work,
+  .work,
   #skills {
     width: 100%;
   }
 
-  #work h3 {
+  .work h3 {
     width: 100%;
     color: #b39d22;
     font-size: 3.2rem;
@@ -1567,6 +1574,7 @@ h3 {
   .contact-wrapper {
     flex-direction: row;
     justify-content: center;
+    margin-right: 8rem;
   }
 
 
@@ -1600,7 +1608,9 @@ h3 {
   }
 
   #contact .social-container a {
-    font-size: 1.2rem;
+    font-size: 3.4rem;
+    color: #400E32;
+    
   }
 }
 
@@ -1769,12 +1779,12 @@ h3 {
   /* ==========================================================================
   PORTFOLIO SECTION
    ========================================================================== */
-  #work,
+  .work,
   #skills {
     width: 100%;
   }
 
-  #work h3 {
+  .work h3 {
     width: 100%;
     color: #b39d22;
     font-size: 3.4rem;
@@ -1935,7 +1945,7 @@ h3 {
   }
 
   #contact .social-container a {
-    font-size: 1.2rem;
+    font-size: 3.4rem;
   }
 
   #contact h3 {
@@ -1952,6 +1962,7 @@ h3 {
   #contact h2 {
     font-size: 3.4rem;
   }
+
 
   #bottom {
     background-color: #400E32;
